@@ -1,0 +1,45 @@
+.main {
+    flex: auto;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    display: flex;
+}
+
+.productsContainer {
+    padding: 1rem;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #eee;
+    width: 100%;
+    align-items: flex-start;
+    height: calc(100vh - 114px);
+}
+
+.productsContainer::-webkit-scrollbar {
+    width: 8px;
+}
+
+.productsContainer::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.productsContainer::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.productsContainer::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+
+.productsContainer::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 4px;
+}
+
+.productsContainer::-webkit-scrollbar-track:hover,
+.productsContainer::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}

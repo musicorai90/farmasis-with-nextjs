@@ -1,0 +1,65 @@
+.formContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 25%;
+    padding: 1rem;
+}
+
+.form > h1 {
+    color: #2ca86e;
+    text-align: center;
+}
+
+.form > input {
+    border: 1px solid #ddd;
+    padding: .5rem;
+    font-family: 'Akaya Telivigala', cursive;
+    border-radius: 5px;
+    margin-bottom: .5rem;
+    transition: all .5s ease-in-out;
+}
+
+.form > input:focus {
+    outline: none;
+    border: 1px solid #2ca86e;
+}
+
+.form > input[type="submit"] {
+    background: #2ca86e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.form > input[type="submit"]:hover {
+    opacity: .8;
+}
+
+.form > a {
+    color: #2ca86e;
+    display: block;
+    text-align: center;
+}
+
+.form > * {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .form {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .form {
+        width: 75%;
+    }
+}

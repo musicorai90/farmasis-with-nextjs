@@ -1,0 +1,144 @@
+.product {
+    width: 30%;
+    padding: .5rem 1rem 1rem;
+    border-radius: 5px;
+    background: #fff;
+    height: auto;
+    margin: .5rem;
+}
+
+.product > span {
+    display: block;
+    text-align: right;
+}
+
+.product > h2 {
+    margin: 0;
+    padding: .5rem 0;
+}
+
+.product > p {
+    margin-top: 0;
+}
+
+.product > img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: .5rem;
+}
+
+.product > a {
+    background: #2ca86e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: .5rem;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+}
+
+.product > a:hover {
+    opacity: .8;
+}
+
+.modal {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    border: none;
+    background: #fff;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.modalClose {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    font-family: 'Akaya Telivigala', cursive;
+    color: rgba(0,0,0,.5);
+    cursor: pointer;
+}
+
+.modalTitle {
+    margin: 0 0 1rem;
+}
+
+.modalInputContent > input {
+    border: 1px solid #ddd;
+    padding: .5rem;
+    font-family: 'Akaya Telivigala', cursive;
+    border-radius: 5px;
+    margin-bottom: .5rem;
+    transition: all .5s ease-in-out;
+    display: block;
+    width: 100%;
+}
+
+.modalInputContent > input:focus {
+    outline: none;
+    border: 1px solid #2ca86e;
+} 
+
+.modalButton {
+    margin-top: .5rem;
+    background: #2ca86e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    padding: .5rem;
+    border-radius: 5px;
+    font-family: 'Akaya Telivigala', cursive;
+    display: block;
+    width: 100%;
+    transition: all .5s ease-in-out;
+}
+
+.modalButton:focus {
+    opacity: .8;
+}
+
+.toast {
+    background: #2ca86e;
+    color: #fff;
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+@media screen and (max-width: 768px) {
+    .product {
+        width: 45%;
+    }
+    
+    .modal {
+		width: 50%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .product {
+        width: 90%;
+    }
+
+    .modal {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .modal {
+        width: 90%;
+    }
+}
